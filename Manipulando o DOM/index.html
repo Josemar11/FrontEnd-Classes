@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript no FrontEnd</title>
+</head>
+<body>
+    
+    <section>
+        <h1>Estruturas de Dados.</h1>
+        <h2 id="subtitulo">Alguns Modelos de Estruturas de Dados.</h2>
+
+        <p class="paragrafo">Listas: Processos executados em um sistema operacional (fila); chamadas de funções num interpretador de código (pilha); cartas em um jogo de baralho (variação de deque).</p>
+        <p class="paragrafo">Árvores: Aplicativos de pesquisa com entrada constante de dados (Árvores binárias); algoritmos de compactação de dados.</p>
+        <p class="paragrafo">Grafos: Redes sociais; algoritmos de sugestão de conexões; algoritmos de cálculo de relacionamentos (professores, disciplinas); aplicações voltadas para distribuição de malha elétrica.</p>
+        <p class="paragrafo">Tabelas Hash: Algoritmos de movimentação de personagens em jogos; bancos de dados; implementação de compiladores.</p>
+
+        <ul id="numeros">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+        <h1>Conhecimentos obtidos</h1>
+        <h2>Seletores DOM</h2>
+            <p>let nomes = document.querySelector( '.tutulo');
+            Retorna o primeiro elemento HTML que contém a classe "titulo".</p>
+            
+            <p>let nomes = document.querySelecotrAll('.nome');
+            Retorna uma lista de elementos que correspondem à pesquisa solicitada.</p>
+            
+            <p>let marca = document.getElementById('marca');
+            Retorna o elemento cujo id corresponde ao solicitado.</p>
+            
+            <p>Em resumo, querySelector() retorna o primeiro elemento, querySelectorAll() retorna todos elementos, queryElementById() retorna elemento DOM que possui a id informada.</p>
+
+            <h2>Modificando o DOM</h2>
+            <h3>.innerHTML > Para ler ou modificar o conteúdo de uma tag HTML.</h3>
+            <p>document.querySelector('div.nome').innerHTML ;
+                Usado para ler o conteúdo.</p>
+            <p>document.querySelector('div.nome').innerHTML = 'Darío';
+                Dessa maneira podemos alterar a div com o nome da classe para a string "Darío".</p>
+            <p>document.querySelector('div.nome').innerHTML += 'Salgadinho' ;
+                Dessa forma estamos adicionando ao div a palavra "Salgadinho"</p>
+                <h3>.inner.Text > Para ler ou modificar o texto de uma tag HTML.</h3>
+                <p>document.querySelector('div.nome').innerText ;
+                    Se no meu div com a classe nome estivesse escrito "Carlos", a propriedade retornaria a string "Carlos".</p>
+                <p>document.querySelector('div.nome').innerText = 'Ruan' ;
+                    Seria alterado todo o texto na div com classe nome para a string "Ruan".</p>
+                <p>document.querySelector('div.nome').innerText += 'Pablo' ;
+                    Semelhante ao que aconteceria com o outro seletor, o texto seria incluído na tag div, deixando: "Ruan Pablo".</p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
