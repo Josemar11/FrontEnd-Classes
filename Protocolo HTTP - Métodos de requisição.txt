@@ -1,0 +1,35 @@
+Protocolo HTTP - Métodos de requisição.
+
+Existem alguns métodos de solicitação que o protocolo HTTP define. Cada um deles representa uma ação, apesar dos métodos possuirem algumas semelhanças, eles implementam funcionalidades diferentes.
+Métodos:
+GET: É usado para solicitar ao servidor informações sobre um recurso específico. Toda vez que digitamos um endereço no navegador ou acessarmos um link, estamos usando o método GET. Caso você queira enviar informações para o servidor usando esse método, elas passarão pelo URL.
+POST: Usado para enviar dados para o servidor, este método é mais seguro que o GET, já que a informação não tráfega pelo URL.
+DELETE: Exclui um recurso presente no servidor, quando excluímos uma postagem no Facebook, por exemplo, estamos utilizando esse método.
+PUT: É muito semelhante ao POST. É usado para substituir todas as informações atuais de um recurso presente no servidor.
+PATCH: Semelhante a PUT, usado para aplicar modificações parciais a um recurso no servidor.
+Obs: PUT e PATCH geralmente são a mesma coisa. A escolha entre um ou outro vai depender do contexto e do que queremos implementar em nossa aplicação. Ao editar uma postagem ou um perfil, usaremos um desses dois métodos.
+
+Resumindo.
+GET = Solicita dados
+POST = Enviar / criar um dado
+PUT = Substituir um dado
+PATCH = Modificar parcialmente um dado
+DELETE = Excluir um dado
+
+Códigos de status HTTP
+Sempre que o servidor recebe uma requisição, ele emite um código de status que indica, em resumo, o status da resposta HTTP. O código tem três dígitos. O primeiro representa um dos 5 tipos de respostas possíveis:
+1 -- Respostas informativas
+2 -- Respostas bem sucedidas
+3 -- Redireciona
+4 -- Erros do cliente
+5 -- Erros do servidor
+
+Alguns dos códigos mais usados:
+200: OK > A solicitação foi bem-sucedida
+301: Moved Permanently > O recurso foi movido
+302: Found > O recurso foi encontrado
+404: Not Found > O recurso não foi encontrado
+550: Permission denied > Permissão negada
+
+"HTTPS é um protocolo melhorado de HTTP. Usando esse protocolo, o servidor criptografa a sessão com um certificado digital."
+
