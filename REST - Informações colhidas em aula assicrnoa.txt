@@ -1,0 +1,36 @@
+REST
+
+REST é um tipo de arquitetura de serviços que proporciona normas entre sistemas informáticos para estabelecer a forma como irão se comunicar.
+
+Conceito - Arquitetura cliente-servidor
+REST é uma arquitetura cliente-servidor, porque deve permitir que tanto a aplicação cliente como a aplicação servidor se desenvolvam ou escalem sem inteferirem uma com a outra. Ou seja, permite a integração com qualquer outra plataforma e tecnologia, tanto cliente como servidor.
+
+Recursos uniformes
+Do lado do servidor, uma arquitetura REST expõe os clientes a uma interface uniforme.
+Todos os recursos no servidor têm um nome sob a forma de URL ou hiperlink.
+Todas as informações são trocadas através do protocolo HTTP.
+Chamamos estas URLs de endpoints, ou seja, o serviço expõe a um conjunto de endpoints aos cliente para que possam ter acesso. A esta interface uniforme, ou seja, ao conjunto de endpoints, chamamos de API.
+Um endpoint está ligado ao recurso que solicitamos, tal recurso deve ter apenas um identificador lógico, e este deve permitir o acesso a toda a informação relacionada.
+
+Sem estado (stateless)
+REST propõe que todas as interações entre cliente e servidor devem ser tratadas como novas e de forma absolutamente independente e sem guardar estado.
+Portanto, se quiséssemos por exemplo, que o servidor faça a distinção entre usuários logados ou convidados, devemos enviar todas as informações de autenticação necessárias em cada pedido que fizermos ao servidor.
+
+Cacheable
+Em REST, o cache de dados é uma ferramenta muito importante, implementada do lado do cliente para melhorar o desempenho e reduzir no servidor.
+
+Formatos
+Quando o servidor envia um pedido, transfere uma representação do estado do recurso solicitado para o requisitante. Tal informação é entregue atráves de HTTP em um destes formatos: JSON, RAW, XLT ou texto sem formato, URL-encoded.
+
+Ajax Fetch
+Os pedidos assíncronos são um pilar fundamental do desenvolvimento JavaScript, especialmente quando estamos do lado do Front end. Com eles, podemos fazer pedidos a diferentes APIs e consumir os dados que nos fornecem de forma dinâmica e sem pôr em risco a carga do resto das nossas funcionalidades.
+Atualmente graças ao WEB APIs, podemos acessar as funcionalidades de Fetch através do JavaScript, que nos permitem, de uma forma simples e rápida, estabelecer comunicação com um servidor através dos diferentes endpoints fornecidos pela sua API.
+
+AJAX Fetch - Get
+Fetch é uma função nativa que nos permite enviar solicitações a uma API de nosso front-end.
+fetch()
+Recebe como primeiro parâmetro a URL do endpoint para o qual estamos fazendo a chamada assíncrona. Não sabendo quando a solicitação é concluída, o servidor retorna uma promessa.
+O primeiro then será encarregado de receber um callback e retornará a resposta desse chamado assícrono em formato JSON.
+Uma vez que a resposta de nosso pedido está em formato JSON, por meio de outra promessa, podemos fazer o que quisermos com nossa resposta.
+Em caso de erro, o cath() cuidará de capturá-lo e depois imprimirá através do console.
+
